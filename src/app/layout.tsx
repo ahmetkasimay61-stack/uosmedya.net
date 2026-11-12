@@ -58,6 +58,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        {/* Sesli asistan: sağ alttaki yuvarlak buton (ElevenLabs). Sayfa yüklendikten
+            sonra boşta yüklenir; ayarlar public/sesli-asistan.js dosyasının başında. */}
+        <Script src="/sesli-asistan.js" strategy="lazyOnload" />
       </body>
     </html>
   );
